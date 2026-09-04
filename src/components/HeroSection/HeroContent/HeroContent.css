@@ -1,0 +1,31 @@
+.hero-content {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  height: calc(100% - 50%);
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.hero-title {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+}
+
+.hero-main {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 506px; /* Обмежуємо ширину, щоб текст не розтягувався на весь екран */
+  width: 100%;
+  max-height: 192px;
+  height: 100%;
+  gap: 10px;
+  align-items: flex-start;
+  flex-direction: column;
+}

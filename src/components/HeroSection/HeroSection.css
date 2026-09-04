@@ -5,6 +5,8 @@
   max-height: 85vh;
   display: flex;
   overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .hero-section img {
