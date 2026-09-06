@@ -1,0 +1,13 @@
+.movie-title {
+  color: #9CA4AB;
+}
+
+.movie-title:not(:last-child)::after {
+  content: "•";
+  margin-left: 8px;      /* Відступ крапки від тексту ліворуч */
+  margin-right: 8px;
+}
+
+.movie-title--primary {
+  color: yellow;
+}

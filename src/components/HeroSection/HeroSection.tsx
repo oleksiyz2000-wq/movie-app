@@ -1,5 +1,5 @@
 import './HeroSection.css'
-import HeroContent from './HeroContent/HeroContent'
+import HeroContent from './HeroContent'
 
 export default function HeroSection() {
     return (

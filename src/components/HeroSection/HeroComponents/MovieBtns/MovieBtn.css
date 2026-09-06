@@ -1,0 +1,38 @@
+.movie-btns__wrapper {
+    display: flex;
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.movie-btn {
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-direction: row-reverse;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1px solid #3E3C43;
+    background-color: #28262D;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.movie-btn--primary {
+    background-color: #00925D;
+    border:#00925D;
+}
+
+.movie-btn img {
+  width: 20px;  /* або потрібний розмір, наприклад 16px/24px */
+  height: 20px;
+  object-fit: contain;
+}
+
+.movie-btn--small {
+    padding: 16px 12px;
+}
