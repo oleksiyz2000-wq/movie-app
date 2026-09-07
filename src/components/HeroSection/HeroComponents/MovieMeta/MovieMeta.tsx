@@ -1,14 +1,14 @@
 import './MovieMeta.css';
 
 interface MovieMetaProps {
-    text: string;
+    children: React.ReactNode;
     isPrimary?: boolean;
 }
 
-export default function MovieMeta({ text, isPrimary }: MovieMetaProps) {
+export default function MovieMeta({ children, isPrimary }: MovieMetaProps) {
     return (
         <h3 className={`movie-title ${isPrimary ? 'movie-title--primary' : ''}`}>
-            {text}
+            {children}
         </h3>
     )
 }

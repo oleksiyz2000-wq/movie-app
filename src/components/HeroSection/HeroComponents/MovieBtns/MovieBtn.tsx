@@ -1,13 +1,13 @@
 import './MovieBtn.css'
 
 interface MovieBtnsProps {
-    text?: string | null;
+    children?: React.ReactNode;
     isPrimary?: boolean;
     icon?: React.ReactNode;
     isSmall?: boolean;
 }
 
-export default function MovieBtn({ text, isPrimary, icon, isSmall }: MovieBtnsProps) {
+export default function MovieBtn({ children, isPrimary, icon, isSmall }: MovieBtnsProps) {
     return (
         <button
             className={`movie-btn 
@@ -15,9 +15,9 @@ export default function MovieBtn({ text, isPrimary, icon, isSmall }: MovieBtnsPr
               ${isSmall ? 'movie-btn--small' : ''}
               
             `}
-        >
-            {text}
+        >   
             {icon}
+            {children}
         </button>
     )
 }

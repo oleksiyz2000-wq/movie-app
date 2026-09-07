@@ -1,9 +1,25 @@
 import './Header.css';
-import NavContainer from './NavContainer/NavContainer';
-import NavButton from './NavContainer/NavButton';
-import { NAV_LINKS } from './constants';
-import { Search } from 'lucide-react';
-import { Bell } from 'lucide-react';
+import NavContainer from './components/NavContainer/NavContainer';
+import NavButton from './components/NavContainer/NavButton';
+import { Search, Bell } from 'lucide-react';
+
+export const NAV_LINKS = [
+  { label: "Home", 
+    href: "/" 
+  },
+  { label: "Discover", 
+    href: "/" 
+  },
+  { label: "New release", 
+    href: "/" 
+  },
+  { label: "Forum", 
+    href: "/" 
+  },
+  { label: "About", 
+    href: "/" 
+  },
+];
 
 export default function Header() {
   return (

@@ -1,0 +1,10 @@
+.actor-card {
+    display: flex;
+    gap: 13px;
+}
+
+.actor-description__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,38 @@
+.about-section {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    padding: 50px 75px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.description__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.title {
+    font-size: 16px;
+    color: white;
+}
+
+.text {
+    line-height: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    color: #9CA4AB;
+}
+
+.top-cast__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.actor-cards__wrapper {
+    display: flex;
+    gap: 85px
+}

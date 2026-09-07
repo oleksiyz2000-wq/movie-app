@@ -5,14 +5,14 @@ import MovieMeta from './HeroComponents/MovieMeta/MovieMeta';
 import MovieBtn from './HeroComponents/MovieBtns/MovieBtn';
 
 import {
-    CirclePlay,
-    Bookmark,
-    VolumeX,
-    Heart,
-    Download,
-    Share2 
-} 
-from 'lucide-react';
+  CirclePlay,
+  Bookmark,
+  VolumeX,
+  Heart,
+  Download,
+  Share2
+}
+  from 'lucide-react';
 
 const movieMetaData = [
   {
@@ -92,9 +92,10 @@ export default function HeroContent() {
           {movieMetaData.map((item) => (
             <MovieMeta
               key={item.id}
-              text={item.text}
               isPrimary={item.isPrimary}
-            />
+            >
+              {item.text}
+            </MovieMeta>
           ))}
         </div>
         <div className="movie-btns__wrapper">
@@ -102,9 +103,10 @@ export default function HeroContent() {
             <MovieBtn
               key={item.id}
               isPrimary={item.isPrimary}
-              text={item.text}
               icon={item.icon}
-            />
+            >
+              {item.text}
+            </MovieBtn>
           ))}
         </div>
       </div>
@@ -114,9 +116,10 @@ export default function HeroContent() {
             <MovieBtn
               key={item.id}
               icon={item.icon}
-              text={item.text}
               isSmall={item.isSmall}
-            />
+            >
+              {item.text}
+            </MovieBtn>
           ))}
         </div>
       </div>
