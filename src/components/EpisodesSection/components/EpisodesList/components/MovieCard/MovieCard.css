@@ -1,0 +1,25 @@
+.movie-card {
+  display: flex;
+  height: 183px;
+  width: 280px;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 0 12px;
+  justify-content: flex-end;
+  padding-bottom: 15px;
+}
+
+.info-title {
+  color: white;
+}
+
+.info-text {
+  color: #9ca4ab;
+  font-size: 13px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

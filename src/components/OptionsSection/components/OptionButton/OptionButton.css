@@ -1,0 +1,30 @@
+.option-button {
+  display: flex;
+  color: #9ca4ab;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.option-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #00925d;
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
+}
+
+.option-button.active {
+  color: white;
+}
+
+.option-button.active::after {
+  width: 100%;
+  left: 0;
+}

@@ -1,0 +1,32 @@
+.movie-button {
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 1px solid #3e3c43;
+  background-color: #28262d;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.movie-button.primary {
+  background-color: #00925d;
+  border: #00925d;
+}
+
+.movie-button img {
+  width: 20px;
+  /* або потрібний розмір, наприклад 16px/24px */
+  height: 20px;
+  object-fit: contain;
+}
+
+.movie-button.small {
+  padding: 16px 12px;
+}

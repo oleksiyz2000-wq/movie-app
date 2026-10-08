@@ -1,0 +1,59 @@
+.episodes-section {
+  display: flex;
+  height: 351px;
+  background-color: black;
+  flex-direction: column;
+  padding: 50px 75px;
+  gap: 20px;
+}
+
+.episodes-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-select {
+  display: flex;
+  height: 44px;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #3e3c43;
+  background-color: #28262d;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.select-option {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.header-title {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+.episodes-main__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+
+.episodes-main__container > * {
+  flex-shrink: 0;
+}
+
+.episodes-main {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
