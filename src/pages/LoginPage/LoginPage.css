@@ -40,6 +40,24 @@ body {
     justify-content: space-between;
 }
 
+.auth-text {
+    color: #62666b;
+    font-size: 9px;
+}
+
+.auth-main {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth__forgot-password {
+    color: #03704a;
+    font-size: 12px;
+    cursor: pointer;
+}
+
 .auth-header__button {
     display: inline-flex;
     align-items: center;
@@ -53,54 +71,4 @@ body {
     font-weight: 600;
     color: white;
     cursor: pointer;
-}
-
-.auth-text {
-    color: #62666b;
-    font-size: 9px;
-}
-
-.auth-main {
-    display: flex;
-    margin-top: 20px;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.auth-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    width: 100%;
-    align-items: center;
-    margin-top: 25px;
-}
-
-.auth__forgot-password {
-    color: #03704a;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-.auth-footer__button {
-    height: 35px;
-    width: 100%;
-    background: #28252d;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    color: #3e3c43;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.auth__signup {
-    display: flex;
-    gap: 5px;
-    font-size: 13px;
-    color: #4C4D53;
-
-    .auth__signup-link {
-        color: #018656;
-    }
 }

@@ -1,0 +1,25 @@
+.auth-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.auth-header__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+
+    border: 1px solid #3e3c43;
+    background-color: #28262d;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.auth-text {
+    color: #62666b;
+    font-size: 9px;
+}

@@ -1,12 +1,13 @@
 import { createBrowserRouter } from "react-router"
 
-import RegistrationPage from './pages/register-page'
+import LoginPage from './pages/LoginPage'
+import RegistrationPage from "./pages/RegistrationPage"
 import App from "./App.tsx"
 
 const router = createBrowserRouter([
   { path: "/", element: <App/>},
-  { path: "/registration", element: <RegistrationPage/> },
-
+  { path: "/login", element: <LoginPage/> },
+  { path: "/registration", element: <RegistrationPage/>}
 ])
 
 export default router
