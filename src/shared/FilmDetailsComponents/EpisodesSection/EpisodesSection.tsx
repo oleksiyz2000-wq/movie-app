@@ -3,7 +3,7 @@ import "./EpisodesSection.css"
 import { MovieCardsData } from "./constants.ts"
 import { SelectData } from "./constants.ts"
 
-import MovieCard from "./components/EpisodesList/components/MovieCard/MovieCard"
+import MovieCard from "./components/EpisodesList/components/MovieCard/MovieCard.tsx"
 import MovieOption from "./components/EpisodesList/components/MovieOption/MovieOption.tsx"
 
 export default function EpisodesSection() {
@@ -23,7 +23,7 @@ export default function EpisodesSection() {
             <MovieCard key={item.id} title={item.title} text={item.text} background={item.background} />
           ))}
         </div>
-    </div>
+      </div>
     </div>
   )
 }

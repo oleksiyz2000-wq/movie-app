@@ -1,0 +1,14 @@
+.similar-button {
+    display: flex;
+    height: 44px;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid #3e3c43;
+    background-color: #28262d;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}

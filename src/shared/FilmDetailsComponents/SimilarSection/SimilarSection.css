@@ -1,0 +1,37 @@
+.similar-section {
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  padding: 50px 75px;
+  gap: 20px;
+}
+
+.episodes-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-title {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+.similar-main__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+
+.similar-main__container > * {
+  flex-shrink: 0;
+}
+
+.similar-main {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}

@@ -1,6 +1,6 @@
 import "./Header.css"
-import NavContainer from "./components/NavContainer/NavContainer"
-import NavButton from "./components/NavContainer/NavButton"
+import NavContainer from "./components/NavContainer/NavContainer.tsx"
+import NavButton from "./components/NavContainer/NavButton.tsx"
 import { Search, Bell } from "lucide-react"
 
 export const NAV_LINKS = [
@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <>
       <header>
-        <a className="logo-link" href="/">
+        <a className="logo-link" href="/public">
           <img className="logo" src="src/assets/Logo-brand.svg" alt="Logo" />
         </a>
 
