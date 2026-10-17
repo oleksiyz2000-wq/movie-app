@@ -1,16 +1,17 @@
 import "./HeroSection.css"
-import MovieMeta from "../../MovieMeta/MovieMeta.tsx"
+import "./components/MovieButton/MovieButton.css"
+
+import MovieMeta from "./components/MovieMeta/MovieMeta.tsx"
 import MovieButton from "./components/MovieButton/MovieButton.tsx"
 
-import "./HeroContent.css"
-import "./components/MovieButton/MovieButton.css"
+import { Fragment } from "react"
 
 import { CirclePlay, Bookmark, VolumeX, Heart, Download, Share2 } from "lucide-react"
 
 const movieMetaData = [
   {
     id: 1,
-    text: "⭐ 4.9",
+    text: "4.9",
     isPrimary: true,
   },
   {
@@ -74,11 +75,7 @@ const HeroDetailsData = [
   },
 ]
 
-interface HeroSectionProps {
-  rating: string;
-}
-
-export default function HeroSection({ rating }: HeroSectionProps) {
+export default function HeroSection() {
   return (
     <section className="hero-section">
       <img className="hero-image" src="src/assets/background.png" />
@@ -86,10 +83,14 @@ export default function HeroSection({ rating }: HeroSectionProps) {
         <div className="hero-main">
           <h1 className="hero-title">The Last Of Us Season 1</h1>
           <div className="movie-meta__container">
-            {movieMetaData.map((item) => (
-              <MovieMeta key={item.id} isPrimary={item.isPrimary}>
-                {item.text}
-              </MovieMeta>
+            {movieMetaData.map((item, index) => (
+              <Fragment key={item.id}>
+                <MovieMeta isPrimary={item.isPrimary}>
+                  {index === 0 && <span className="star">⭐ </span>}
+                  {item.text}
+                </MovieMeta>
+                {index < movieMetaData.length - 1 && <span className="dot"> • </span>}
+              </Fragment>
             ))}
           </div>
           <div className="movie-button__container">
@@ -102,7 +103,11 @@ export default function HeroSection({ rating }: HeroSectionProps) {
         </div>
         <div className="hero-details">
           <div className="details-button__container">
-            <p>{rating}</p>
+            {HeroDetailsData.map((item) => (
+              <MovieButton key={item.id} icon={item.icon} isSmall={item.isSmall}>
+                {item.text}
+              </MovieButton>
+            ))}
           </div>
         </div>
       </div>

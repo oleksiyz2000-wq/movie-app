@@ -15,7 +15,12 @@ export default function SimilarSection() {
       <div className="similar-main">
         <div className="similar-main__container">
           {SimilarCardsData.map((item) => (
-            <SimilarCard key={item.id} title={item.title} background={item.background} />
+            <SimilarCard
+              key={item.id}
+              title={item.title}
+              background={item.background}
+              meta={item.meta ?? []}
+            />
           ))}
         </div>
       </div>

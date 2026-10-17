@@ -26,3 +26,20 @@
   flex-direction: column;
   gap: 5px;
 }
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #9ca4ab;
+  font-weight: 600;
+}
+
+.rating-text {
+  color: #ffcd1a;
+}
+
+.dot {
+  margin: 0 4px;
+  color: #9ca4ab;
+}
