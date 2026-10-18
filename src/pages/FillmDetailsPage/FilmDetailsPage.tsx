@@ -6,6 +6,7 @@ import OptionsSection from "../../shared/FilmDetailsComponents/OptionsSection/Op
 import EpisodesSection from "../../shared/FilmDetailsComponents/EpisodesSection/EpisodesSection.tsx"
 import Header from "../../shared/FilmDetailsComponents/Header/Header.tsx"
 import SimilarSection from "../../shared/FilmDetailsComponents/SimilarSection/SimilarSection.tsx"
+import Footer from "../../shared/FilmDetailsComponents/Footer/Footer.tsx"
 
 export default function FilmDetailsPage() {
   return (
@@ -17,6 +18,7 @@ export default function FilmDetailsPage() {
         <OptionsSection />
         <EpisodesSection />
         <SimilarSection />
+        <Footer/>
       </main>
     </>
   )

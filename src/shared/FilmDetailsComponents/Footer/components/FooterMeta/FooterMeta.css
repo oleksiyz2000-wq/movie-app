@@ -1,0 +1,12 @@
+.meta-link {
+    text-decoration: none;
+    color: #9ca3aa;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.footer-meta__copyright {
+    color: #9ca3aa;
+    font-size: 13px;
+}
