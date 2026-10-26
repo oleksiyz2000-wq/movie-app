@@ -6,95 +6,41 @@ import MovieButton from "./components/MovieButton/MovieButton.tsx"
 
 import { Fragment } from "react"
 
-import { CirclePlay, Bookmark, VolumeX, Heart, Download, Share2 } from "lucide-react"
+interface HeroSectionProps {
+  title?: string;
+  imageSrc?: string;
+  metaData?: Array<{ id: number; text: string; isPrimary?: boolean }>;
+  buttonsData?: Array<{ id: number; text: string; isPrimary?: boolean; icon?: any }>;
+  detailsData?: Array<{ id: number; text: string | null; isSmall?: boolean; icon?: any }>;
+}
 
-const movieMetaData = [
-  {
-    id: 1,
-    text: "4.9",
-    isPrimary: true,
-  },
-  {
-    id: 2,
-    text: "2022",
-    isPrimary: false,
-  },
-  {
-    id: 3,
-    text: "Fantasy",
-    isPrimary: false,
-  },
-  {
-    id: 4,
-    text: "Actions",
-    isPrimary: false,
-  },
-  {
-    id: 5,
-    text: "Horror",
-    isPrimary: false,
-  },
-]
+export default function HeroSection({
+  title,
+  imageSrc,
 
-const movieButtonsData = [
-  {
-    id: 1,
-    isPrimary: true,
-    icon: <CirclePlay size={20} />,
-    text: "Continue Watching",
-  },
-  {
-    id: 2,
-    isPrimary: false,
-    icon: <Bookmark size={20} />,
-    text: "Add Watchlist",
-  },
-]
-
-const HeroDetailsData = [
-  {
-    id: 1,
-    icon: <VolumeX size={20} />,
-    text: null,
-    isSmall: true,
-  },
-  {
-    id: 2,
-    icon: <Heart size={20} />,
-    text: "Like",
-  },
-  {
-    id: 3,
-    icon: <Download size={20} />,
-    text: "Download",
-  },
-  {
-    id: 4,
-    icon: <Share2 size={20} />,
-    text: "Share",
-  },
-]
-
-export default function HeroSection() {
+  metaData = [],
+  buttonsData = [],
+  detailsData = [],
+}: HeroSectionProps) {
   return (
     <section className="hero-section">
-      <img className="hero-image" src="src/assets/background.png" />
+      <img className="hero-image" src={imageSrc} />
       <div className="hero-content">
         <div className="hero-main">
-          <h1 className="hero-title">The Last Of Us Season 1</h1>
+          <h1 className="hero-title">{title}</h1>
           <div className="movie-meta__container">
-            {movieMetaData.map((item, index) => (
+            {metaData.map((item, index) => (
               <Fragment key={item.id}>
                 <MovieMeta isPrimary={item.isPrimary}>
                   {index === 0 && <span className="star">⭐ </span>}
                   {item.text}
                 </MovieMeta>
-                {index < movieMetaData.length - 1 && <span className="dot"> • </span>}
+                {index < metaData.length - 1 && <span className="dot"> • </span>}
               </Fragment>
             ))}
           </div>
           <div className="movie-button__container">
-            {movieButtonsData.map((item) => (
+            {buttonsData.map((item) => (
               <MovieButton key={item.id} isPrimary={item.isPrimary} icon={item.icon}>
                 {item.text}
               </MovieButton>
@@ -103,7 +49,7 @@ export default function HeroSection() {
         </div>
         <div className="hero-details">
           <div className="details-button__container">
-            {HeroDetailsData.map((item) => (
+            {detailsData.map((item) => (
               <MovieButton key={item.id} icon={item.icon} isSmall={item.isSmall}>
                 {item.text}
               </MovieButton>

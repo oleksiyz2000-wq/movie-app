@@ -1,15 +1,10 @@
 import "./Header.css"
 import NavContainer from "./components/NavContainer/NavContainer.tsx"
 import NavButton from "./components/NavContainer/NavButton.tsx"
+
 import { Search, Bell } from "lucide-react"
 
-export const NAV_LINKS = [
-  { id: 1, label: "Home", href: "/registration" },
-  { id: 2, label: "Discover", href: "/" },
-  { id: 3, label: "New release", href: "/" },
-  { id: 4, label: "Forum", href: "/" },
-  { id: 5, label: "About", href: "/" },
-]
+import { NAV_LINKS } from "../../../pages/FillmDetailsPage/constants.tsx"
 
 export default function Header() {
   return (

@@ -7,7 +7,7 @@
   gap: 24px;
 }
 
-.description__wrapper {
+.description__container {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -37,13 +37,13 @@
   color: #9ca4ab;
 }
 
-.top-cast__wrapper {
+.top-cast__container {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.actor-cards__wrapper {
+.actor-cards__container {
   display: flex;
   gap: 85px;
   overflow-x: auto;
@@ -52,20 +52,20 @@
   scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
 }
 
-.actor-cards__wrapper::-webkit-scrollbar {
+.actor-cards__container::-webkit-scrollbar {
   height: 4px;
 }
 
-.actor-cards__wrapper::-webkit-scrollbar-track {
+.actor-cards__container::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.actor-cards__wrapper::-webkit-scrollbar-thumb {
+.actor-cards__container::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   transition: background 0.3s ease;
 }
 
-.actor-cards__wrapper::-webkit-scrollbar-thumb:hover {
+.actor-cards__container::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.6);
 }

@@ -1,11 +1,13 @@
 import "./SimilarSection.css"
 
-import { SimilarCardsData } from "./constants.ts"
-
 import SimilarCard from "./components/SimilarList/components/SimilarCard/SimilarCard.tsx"
 import SimilarButton from "./components/SimilarList/components/SimilarOption/SimilarOption.tsx"
 
-export default function SimilarSection() {
+interface SimilarSectionProps {
+  similarCardsData?: Array<{ id: number; title: string; text: string; background: string; meta: string[]}>;
+}
+
+export default function SimilarSection({ similarCardsData=[] }: SimilarSectionProps) {
   return (
     <div className="similar-section">
       <div className="episodes-header">
@@ -14,7 +16,7 @@ export default function SimilarSection() {
       </div>
       <div className="similar-main">
         <div className="similar-main__container">
-          {SimilarCardsData.map((item) => (
+          {similarCardsData.map((item) => (
             <SimilarCard
               key={item.id}
               title={item.title}
